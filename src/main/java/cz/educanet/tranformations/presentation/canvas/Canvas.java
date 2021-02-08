@@ -21,6 +21,7 @@ public class Canvas extends JPanel {
 
     public Canvas() {
         setBackground(Color.BLACK);
+        setSize(800, 600);
 
         addMouseListener(new CanvasMouseListener((x, y, button) -> {
             Coordinate c = new Coordinate(x / cellWidth, y / cellHeight);
